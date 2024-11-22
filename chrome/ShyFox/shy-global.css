@@ -129,8 +129,8 @@ Area where website is displayed
 
 /* statuspanel (that thing at the bottom of the screen that shows the address of the link you're hovering over) */
 #statuspanel {
-    margin: 10px !important;
-    }
+margin: 10px !important;
+}
 #statuspanel #statuspanel-label {
   padding: 2px 10px !important;
   border-radius: var(--big-rounding) !important;
