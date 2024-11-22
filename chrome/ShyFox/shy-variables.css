@@ -92,7 +92,7 @@ Reserved values and all sorts of dynamic variables. You should not touch them.
   &:-moz-window-inactive{--dyn-opct: var(--inactive-opct);}
   
   /* shared shortcuts for commonly used parameters */
-  --outline: 1px solid var(--arrowpanel-background);      /* outline around almost anything              */
+  --outline: 1px solid transparent;      /* outline around almost anything              */
   --shadow: 2px solid var(--shadow-col);                  /* translucent outline that imitates a shadow  */
   --transition: all var(--trans-dur) ease-out;            /* animation for smooth transitions            */
   
