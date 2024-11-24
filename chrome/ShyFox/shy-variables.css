@@ -11,16 +11,16 @@ Values of these variables can be changed safely and most likely nothing will bre
 
 :root, #screenshots-component *{
   /* accent color */
-  --shy-accent-color: #3584E4;
+  --shy-accent-color: #6084ac;
   
   /* window border thickness and size of many margins */
   --margin: 0.8rem;
   
   /* rounded corners radius of most elements */
-  --rounding: 11.5px;
-  --big-rounding: 15px;
-  --bigger-rounding: 20px;
-  --giant-rounding: 30px;
+  --rounding: 1rem;
+  --big-rounding: 1.2rem;
+  --bigger-rounding: 1.8rem;
+  --giant-rounding: 2rem;
   
   /* animations time */
   --trans-dur: 0.25s;
@@ -39,7 +39,7 @@ Values of these variables can be changed safely and most likely nothing will bre
   --inactive-opct: 0.7;
   
   /* transparency of indicator bars showing the position of hidden panels */
-  --hide-bar-opct: 0.2;
+  --hide-bar-opct: 0.05;
   &:-moz-window-inactive{--hide-bar-opct: 0.1;}
   
   /* how much shorter these bars than panels */

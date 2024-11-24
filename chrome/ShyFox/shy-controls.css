@@ -153,10 +153,10 @@ Styles for Min Max Close buttons
   }
 
   @media not (-moz-bool-pref: "shyfox.force.native.controls"){
-    .titlebar-close   {list-style-image: url("../icons/gtk-window-close-symbolic.svg")    !important;}
-    .titlebar-min     {list-style-image: url("../icons/gtk-window-minimize-symbolic.svg") !important;}
-    .titlebar-max     {list-style-image: url("../icons/gtk-window-maximize-symbolic.svg") !important;}
-    .titlebar-restore {list-style-image: url("../icons/gtk-window-restore-symbolic.svg")  !important;}
+    .titlebar-close   {list-style-image: url("../icons/breeze-window-close-symbolic.svg")    !important;}
+    .titlebar-min     {list-style-image: url("../icons/breeze-window-minimize-symbolic.svg") !important;}
+    .titlebar-max     {list-style-image: url("../icons/breeze-window-maximize-symbolic.svg") !important;}
+    .titlebar-restore {list-style-image: url("../icons/breeze-window-restore-symbolic.svg")  !important;}
     
     .titlebar-button .toolbarbutton-icon{
       background-color: color-mix(in srgb, var(--bt-col) 5%, transparent);
