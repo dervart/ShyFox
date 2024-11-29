@@ -24,6 +24,10 @@ Cool floating search panel
 
     position: fixed !important;
     z-index: 999999 !important;
+    -webkit-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -o-transition-property: none !important;
+    transition-property: none !important;
 
     bottom: auto !important;
     top: 20vh !important;

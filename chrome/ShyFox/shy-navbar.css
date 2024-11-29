@@ -33,6 +33,11 @@ Navigation bar on top of the window
   padding-bottom: 2px !important;
 }
 
+/* Remove annoying jumps urlbar when hover */
+#urlbar-container {
+  margin-inline: 0px !important;
+}
+
 /* 
 
 --- NAVBAR SHOWN ------------------------------------------------------------------------------------------------------------------------------------
@@ -171,7 +176,7 @@ Navigation bar on top of the window
     #nav-bar-overflow-button,
     #urlbar
     {
-       transition: var(--transition) !important;
+       transition: var(--transition);
        opacity: 0 !important;
     }
     
@@ -248,6 +253,7 @@ Navigation bar on top of the window
   ) {
     #nav-bar{
       top: calc(var(--top-margin) + var(--margin));
+      width: var(--navbar-real-wdt) !important;
       
       background-color: var(--tb-col) !important;
       
