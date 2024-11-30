@@ -33,11 +33,6 @@ Navigation bar on top of the window
   padding-bottom: 2px !important;
 }
 
-/* Remove annoying jumps urlbar when hover */
-#urlbar-container {
-  margin-inline: 0px !important;
-}
-
 /* 
 
 --- NAVBAR SHOWN ------------------------------------------------------------------------------------------------------------------------------------
@@ -173,10 +168,9 @@ Navigation bar on top of the window
     
     /* make all panel content invisible (it will visible when hover) */
     #nav-bar-customization-target > *:not(#unified-extensions-button),
-    #nav-bar-overflow-button,
-    #urlbar
+    #nav-bar-overflow-button
     {
-       transition: var(--transition);
+       transition: var(--transition) !important;
        opacity: 0 !important;
     }
     
@@ -241,6 +235,20 @@ Navigation bar on top of the window
     );
   }
   
+  /* hotfix */
+  #urlbar{
+    visibility: collapse;
+  }
+
+  #urlbar-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: var(--rounding);
+    background-color: var(--toolbar-field-background-color);
+  }
+  
+  
   /* show navbar on hover or focus */
   &:has(
     #nav-bar-customization-target:hover #unified-extensions-button:not(:hover),
@@ -252,8 +260,16 @@ Navigation bar on top of the window
     #nav-bar-overflow-button:hover
   ) {
     #nav-bar{
+      
+      /* hotfix */
+      #urlbar{
+        visibility: visible !important;
+        transition: visibility 0s linear var(--trans-dur);
+        min-width: var(--urlbar-width) !important;
+      }
+
+      
       top: calc(var(--top-margin) + var(--margin));
-      width: var(--navbar-real-wdt) !important;
       
       background-color: var(--tb-col) !important;
       
@@ -262,7 +278,7 @@ Navigation bar on top of the window
       outline: var(--shadow) !important;
       
       #nav-bar-customization-target > *:not([disabled="true"]),
-      #nav-bar-overflow-button, #urlbar {opacity: 1 !important;}
+      #nav-bar-overflow-button {opacity: 1 !important;}
       #nav-bar-customization-target > *[disabled="true"] {opacity: 0.5 !important;}
       
       &::before {opacity: 0;}
